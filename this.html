@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Sign up Instagram</title>
+        <meta charset ="utf-8">
+		<meta name="description" content=""/>
+		<meta name="keywords" content="HTML,CSS,Java script"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    </head>
+    <body>
+        <script>
+            function main(a,b){
+                console.log("this",this,[a,b]);
+            }
+            
+            user = {
+                name:"tamil",
+                age:23,
+            }
+            
+            main.call(user,10,20); //Extra value , use
+            main.apply(user,[10,20]); //Extra value [] use. call,apply function trigger
+            var func = main.bind(user,4,5); //bind not trigger for function
+            func();
+        </script>
+    </body>
+</html>
